@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap" rel="stylesheet">
+    <title>Eshop</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__inner">
+                <div class="header__logo">
+                    ESHOP
+                </div>
+                <nav class="header__nav">
+                    <a href="#" class="nav__link">contacts</a>
+                    <a href="#" class="nav__link">blog</a>
+                    <a href="#" class="nav__link" id="cart">cart</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+<main class="main">
+    <div class="wrapper">
+
+        <div class="goods">
+            <!-- <div class="card__goods">
+                <h2 class="card__title">title</h2>
+                <img src="#" alt="#" class="card__img">
+                <p class="card__cost">cost</p>
+                <a href="#" class="card__button">BUY</a>
+            </div> -->
+        </div>
+    </div>
+</main>
+
+<div id=popup class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <h2>Cart:</h2>
+            <p class="popup__text"></p>
+            <div class="popup__inner">
+            </div>
+            <form action="submit" class="popup__form">
+                
+                <div class="form__wrapper">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form__input" name="name" id="name">
+                </div>
+                <div class="form__wrapper">
+                    <label for="email">email:</label>
+                    <input type="email" class="form__input" name="email" id="email">
+                </div>
+                <div class="form__wrapper">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form__input" name="phone" id="phone">
+                </div>  
+
+                <button type="submit" class="form__button" id="submit">purchase</button>
+            </form>
+            <p class="form__warning"></p>
+            <a href="#" class="popup__close">X</a>
+        </div>
+    </div>
+</div>
+
+<div class="notify">
+    <div class="wrapper">
+        <div class="notify__body">
+            <p>Good has been added to cart</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/scripts/script.js"></script>
+</body>
+</html>
